@@ -216,7 +216,7 @@ export default {
       scores: [],
       pools: {},
       picks: {},
-      gameDay: moment.now() < moment.tz('2020-02-03T13:00:00', 'America/Los_Angeles'),
+      gameDay: moment.now() < moment.tz('2021-02-07T13:00:00', 'America/Los_Angeles'),
       afc: {},
       nfc: {},
       selectedEntries: [],
