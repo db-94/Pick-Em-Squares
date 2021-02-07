@@ -39,31 +39,31 @@
           <md-table-row v-for="(picks, index) in pools.entries[user]['25']" v-bind:key="user + '25' + index">
             <md-table-cell>{{user}}</md-table-cell>
             <md-table-cell>$25</md-table-cell>
-            <md-table-cell>SF: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
           </md-table-row>
 
           <md-table-row v-for="(picks, index) in pools.entries[user]['10']" v-bind:key="user + '10' + index">
             <md-table-cell>{{user}}</md-table-cell>
             <md-table-cell>$10</md-table-cell>
-            <md-table-cell>SF: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
           </md-table-row>
 
           <md-table-row v-for="(picks, index) in pools.entries[user]['1']" v-bind:key="user + '1' + index">
             <md-table-cell>{{user}}</md-table-cell>
             <md-table-cell>$1</md-table-cell>
-            <md-table-cell>SF: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
-            <md-table-cell>SF: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
+            <md-table-cell>TB: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
           </md-table-row>
         </md-table>
       </md-card-content>
