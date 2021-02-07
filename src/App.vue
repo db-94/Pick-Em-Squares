@@ -4,7 +4,6 @@
       <md-button class="md-icon-button md-raised" @click="home()"><md-icon>home</md-icon></md-button>
       <md-button class="md-icon-button md-primary md-raised" v-if="choice" @click="showDialog = true"><md-icon>attach_money</md-icon></md-button>
       <md-button class="md-icon-button md-primary md-raised" @click="searchPage()"><md-icon>search</md-icon></md-button>
-      <md-button class="md-raised md-primary" @click="choose('1')">$1</md-button>
       <md-button class="md-raised md-primary" @click="choose('10')">$10</md-button>
       <md-button class="md-raised md-primary" @click="choose('25')">$25</md-button>
     </md-toolbar>
@@ -49,16 +48,6 @@
           <md-table-row v-for="(picks, index) in pools.entries[user]['10']" v-bind:key="user + '10' + index">
             <md-table-cell>{{user}}</md-table-cell>
             <md-table-cell>$10</md-table-cell>
-            <md-table-cell>TB: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
-          </md-table-row>
-
-          <md-table-row v-for="(picks, index) in pools.entries[user]['1']" v-bind:key="user + '1' + index">
-            <md-table-cell>{{user}}</md-table-cell>
-            <md-table-cell>$1</md-table-cell>
             <md-table-cell>TB: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
             <md-table-cell>TB: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
             <md-table-cell>TB: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
