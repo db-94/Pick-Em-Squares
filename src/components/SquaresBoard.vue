@@ -2,12 +2,6 @@
   <md-table md-card>
     <md-table-toolbar>
       <h1 class="md-title" style="flex: 1">{{pool}} Pool</h1>
-      <md-button class="md-raised md-accent" v-on:click="getScores()" :disabled="gameDay">
-        Refresh <md-icon>cached</md-icon>
-      </md-button>
-      <md-button class="md-raised md-accent" v-on:click="getWinners()" :disabled="gameDay">
-        Winners
-      </md-button>
     </md-table-toolbar>
 
     <md-table-row class="noHover">

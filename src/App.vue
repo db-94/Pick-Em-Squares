@@ -38,21 +38,21 @@
           <md-table-row v-for="(picks, index) in pools.entries[user]['25']" v-bind:key="user + '25' + index">
             <md-table-cell>{{user}}</md-table-cell>
             <md-table-cell>$25</md-table-cell>
-            <md-table-cell>TB: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
           </md-table-row>
 
           <md-table-row v-for="(picks, index) in pools.entries[user]['10']" v-bind:key="user + '10' + index">
             <md-table-cell>{{user}}</md-table-cell>
             <md-table-cell>$10</md-table-cell>
-            <md-table-cell>TB: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
-            <md-table-cell>TB: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[0][0]}}, KC: {{picks[0][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[1][0]}}, KC: {{picks[1][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[2][0]}}, KC: {{picks[2][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[3][0]}}, KC: {{picks[3][1]}}</md-table-cell>
+            <md-table-cell>PHI: {{picks[4][0]}}, KC: {{picks[4][1]}}</md-table-cell>
           </md-table-row>
         </md-table>
       </md-card-content>
@@ -68,44 +68,6 @@
         bring up that users scores.<br/>
         The refresh and winners button will become active after the start of the game.<br/>
         Or choose the search icon and view just the picks you select.
-      </md-card-content>
-
-      <md-card-header>
-        <div class="md-title">Mailing List</div>
-      </md-card-header>
-      <md-card-content>
-        If you want to get the emails about superbowl squares next year please sign up for the mailing list. The email might go to your spam so make sure to check for the confirmation email there also.
-        <form action="https://ml.kundenserver.de/cgi-bin/mailinglist.cgi" method="POST" target="_blank">
-          <input checked name="subscribe_r" type="radio" value="subscribe">
-          Yes, I want to become a member of the mailing list squares@db94.io.
-          <br />
-          <input name="subscribe_r" type="radio" value="unsubscribe">
-          Please remove me from mailing list squares@db94.io.
-          <br />
-          Enter your email address:
-          <br />
-          <input maxlength="51" name="mailaccount_r" size="51" type="text">
-          <br />
-          Please confirm your email address:
-          <br />
-          <input maxlength="51" name="mailaccount2_r" size="51" type="text">
-          <br />
-          <input type="SUBMIT" value="Send">
-          <br />
-          <input type="RESET" value="Reset">
-          <hr />
-          <input name="FBMLNAME" type="hidden" value="squares@db94.io">
-          <br />
-          <input name="FBLANG" type="hidden" value="en">
-          <br />
-          <input name="FBURLERROR_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/error.en.html">
-          <br />
-          <input name="FBURLSUBSCRIBE_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/subscribe.en.html">
-          <br />
-          <input name="FBURLUNSUBSCRIBE_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/unsubscribe.en.html">
-          <br />
-          <input name="FBURLINVALID_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/invalid.en.html">
-        </form>
       </md-card-content>
     </md-card>
     <md-card v-if="false">
@@ -205,7 +167,7 @@ export default {
       scores: [],
       pools: {},
       picks: {},
-      gameDay: moment.now() < moment.tz('2021-02-07T13:00:00', 'America/Los_Angeles'),
+      gameDay: moment.now() < moment.tz('2022-02-13T13:00:00', 'America/Los_Angeles'),
       afc: {},
       nfc: {},
       selectedEntries: [],
